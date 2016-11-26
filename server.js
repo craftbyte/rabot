@@ -19,7 +19,7 @@ var slapp = Slapp({
 // Setup different handlers for messages
 //*********************************************
 
-slapp.command('/nmap',, (msg, domain) => {
+slapp.command('/nmap', (msg, domain) => {
   // `respond` is used for actions or commands and uses the `response_url` provided by the
   // incoming request from Slack
   msg.respond(`https://dnsdumpster.com/static/map/${domain}.png`)
