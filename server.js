@@ -22,7 +22,7 @@ var slapp = Slapp({
 slapp.command('/nmap', (msg, domain) => {
   // `respond` is used for actions or commands and uses the `response_url` provided by the
   // incoming request from Slack
-  msg.respond(`https://dnsdumpster.com/static/map/${domain}.png`)
+  msg.say(`https://dnsdumpster.com/static/map/${domain}.png`)
 })
 
 // attach Slapp to express server
